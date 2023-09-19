@@ -8,7 +8,7 @@ More information about this code can be found on the following blog post:
 
 The way this app has been created is by breaking down each cli command in  a single file. For example, we will use 4 different commands for our CLI App:
 
-- discover: This will discover all the network devices and saved them to a local Database.
+- **discover:** This will discover all the network devices and saved them to a local Database.
 - **add:** This will add all the discovered devices from the local database into Netbox. You can also add a single device out of the DB into Netbox
 - **show:** This command will show devices and subnets available in Netbox and the local database.
 - **delete:** will delete all-devices or a single device from netbox.
