@@ -45,7 +45,7 @@ def delete_options(
 ) -> None:
     """Delete all devices or a single device from Netbox. dry-run available"""
     if dry_run:
-        echo("(DRY-RUN): The Devices selected will not be deleted from Netbox")
+        echo("(DRY-RUN): The Devices will NOT be deleted. Ignore the message below:")
         if not all_devices and not single_device:
             secho(
                 "ERROR 1: Please use one of the 2 options: --all-devices or --single-device",
@@ -54,11 +54,11 @@ def delete_options(
             exit(1)
 
     if single_device:
-        echo(f'The device: "{single_device}" will be deleted from Netbox')
+        echo(f'The device: "{single_device}" has been deleted from Netbox')
         exit()
 
     if all_devices:
-        echo("All devices will be deleted from Netbox")
+        echo("All devices have been deleted from Netbox")
 
 
 if __name__ == "__main__":
