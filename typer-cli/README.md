@@ -34,9 +34,9 @@ python main.py add -s chi-leaf-04
 ### discover command
 
 ```bash
-python discover.py discover --help
-python discover.py discover subnet 10.1.1.0/24
-python discover.py discover device chi-leaf-04o
+python main.py discover --help
+python main.py discover subnet 10.1.1.0/24
+python main.py discover device chi-leaf-04
 ```
 
 ### delete command
