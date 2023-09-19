@@ -26,16 +26,6 @@ We will run our `main.py` file and we'll pass any of the 4 commands above.
 - Get into the src folder: `cd src/`
 - Run any of the following commands:
 
-### add command
-
-```bash
-python main.py add --help
-python main.py add --discovered-devices
-python main.py add --single-device chi-leaf-04
-python main.py add -d
-python main.py add -s chi-leaf-04
-```
-
 ### discover command
 
 ```bash
@@ -44,14 +34,14 @@ python main.py discover subnet 10.1.1.0/24
 python main.py discover device chi-leaf-04
 ```
 
-### delete command
+### add command
 
 ```bash
-python main.py delete --help
-python main.py delete --all-devices --dry-run
-python main.py delete --single-device fra-fw-02
-python main.py delete -ad
-python main.py delete -s fra-fw-02
+python main.py add --help
+python main.py add --discovered-devices
+python main.py add --single-device chi-leaf-04
+python main.py add -d
+python main.py add -s chi-leaf-04
 ```
 
 ### show command
@@ -64,4 +54,14 @@ python main.py show netbox subnets
 python main.py show local --help
 python main.py show local devices
 python main.py show local subnets
+```
+
+### delete command
+
+```bash
+python main.py delete --help
+python main.py delete --all-devices --dry-run
+python main.py delete --single-device fra-fw-02
+python main.py delete -ad
+python main.py delete -s fra-fw-02
 ```
