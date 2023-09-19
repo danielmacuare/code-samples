@@ -2,7 +2,9 @@
 
 In this repo we will create a Python CLI App to test Typer's Commands, Sub-commands, Options and Arguments.
 
-More information about this code can be found on the following blog post: LINK
+More information about this code can be found on the following blog post:
+
+- [Python Typer: Powerful CLI Apps](https://blog.dmac.tech/posts/python-typer-powerful-cli-apps/)
 
 The way this app has been created is by breaking down each cli command in  a single file. For example, we will use 4 different commands for our CLI App:
 
@@ -17,7 +19,7 @@ We will call our main file and we will pass any of the 4 commands above.
 
 ## How To use
 
-- Clone the repo: `git@github.com:danielmacuare/code-samples.git`
+- Clone the repo: `git clone git@github.com:danielmacuare/code-samples.git`
 - Install all the dependencies: `cd typer-cli/`
   - If using poetry: `poetry install`
   - If using pip: `pip -r requirements.txt`
@@ -65,5 +67,3 @@ python main.py show local subnets
 ```
 
 ## TO-DO
-
-- Create a Link to the blog post
