@@ -9,13 +9,13 @@ More information about this code can be found on the following blog post:
 The way this app has been created is by breaking down each cli command in  a single file. For example, we will use 4 different commands for our CLI App:
 
 - discover: This will discover all the network devices and saved them to a local Database.
-- add: This will add all the discovered devices from the local database into Netbox. You can also add a single device out of the DB into Netbox
-- show: This command will show devices and subnets available in Netbox and the local database.
-- delete: will delete all-devices or a single device from netbox.
+- **add:** This will add all the discovered devices from the local database into Netbox. You can also add a single device out of the DB into Netbox
+- **show:** This command will show devices and subnets available in Netbox and the local database.
+- **delete:** will delete all-devices or a single device from netbox.
 
-We will call our main file and we will pass any of the 4 commands above.
+We will run our `main.py` file and we'll pass any of the 4 commands above.
 
-**note:** This repo doesn't include any data validations, testing, etc. The idea of this repo is only test how to use Typer to break down your CLI app and make it modular.
+**Note:** This repo doesn't include any data validations, testing, etc. The idea of this repo is only test how to use Typer to break down your CLI app and make it modular.
 
 ## How To use
 
@@ -65,5 +65,3 @@ python main.py show local --help
 python main.py show local devices
 python main.py show local subnets
 ```
-
-## TO-DO
