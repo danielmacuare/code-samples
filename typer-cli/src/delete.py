@@ -20,7 +20,7 @@ Links:
 but you don't want to provide a default value.
 """
 
-from typer import Option, Typer, echo
+from typer import Option, Typer, colors, echo, secho
 
 app = Typer(short_help="delete --all or specific --device. --dry-run available ")
 
@@ -47,7 +47,10 @@ def delete_options(
     if dry_run:
         echo("(DRY-RUN): The Devices selected will not be deleted from Netbox")
         if not all_devices and not single_device:
-            echo("Please use one of the 2 options: --all-devices or --single-device")
+            secho(
+                "ERROR 1: Please use one of the 2 options: --all-devices or --single-device",
+                fg=colors.RED,
+            )
             exit(1)
 
     if single_device:
