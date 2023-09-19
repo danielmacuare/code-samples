@@ -8,7 +8,7 @@ The way this app has been created is by breaking down each cli command in  a sin
 
 - discover: This will discover all the network devices and saved them to a local Database.
 - add: This will add all the discovered devices from the local database into Netbox. You can also add a single device out of the DB into Netbox
-- show: This command will show devices available in Netbox and also devices discovered and available in the local database.
+- show: This command will show devices and subnets available in Netbox and the local database.
 - delete: will delete all-devices or a single device from netbox.
 
 We will call our main file and we will pass any of the 4 commands above.
@@ -34,14 +34,9 @@ python main.py add -s chi-leaf-04
 ### discover command
 
 ```bash
-python main.py show --help
-python main.py show netbox --help
-python main.py show netbox devices
-python main.py show netbox subnets
-python main.py show discovered --help
-python main.py show discovered devices
-python main.py show discovered subnets
- 
+python discover.py discover --help
+python discover.py discover subnet 10.1.1.0/24
+python discover.py discover device chi-leaf-04o
 ```
 
 ### delete command
