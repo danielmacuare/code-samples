@@ -33,20 +33,20 @@ def add_options(
         "-d",
         help="Discovered Devices into netbox",
     ),
-    static_device: str = Option(
+    single_device: str = Option(
         None, "--single-device", "-s", help='Choose a scope: "subnet" OR "devices"'
     ),
 ) -> None:
     """Add Discovered Devices to Netbox or add a static device"""
-    if discovered_devices and static_device:
-        echo(f'All Discovered devices and: "{static_device}" will be added to Netbox')
+    if discovered_devices and single_device:
+        echo(f'All Discovered devices and: "{single_device}" will be added to Netbox')
 
         exit()
 
     if discovered_devices:
         echo("All Discovered devices will be added to Netbox")
-    if static_device:
-        echo(f'The static device: "{static_device}" will be added to Netbox')
+    if single_device:
+        echo(f'The device: "{single_device}" will be added to Netbox')
 
 
 if __name__ == "__main__":
