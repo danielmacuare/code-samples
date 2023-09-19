@@ -56,9 +56,9 @@ python main.py show --help
 python main.py show netbox --help
 python main.py show netbox devices
 python main.py show netbox subnets
-python main.py show discovered --help
-python main.py show discovered devices
-python main.py show discovered subnets
+python main.py local --help
+python main.py local devices
+python main.py local subnets
 ```
 
 ## TO-DO
