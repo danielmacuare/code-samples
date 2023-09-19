@@ -18,7 +18,10 @@ We will call our main file and we will pass any of the 4 commands above.
 ## How To use
 
 - Clone the repo: `git@github.com:danielmacuare/code-samples.git`
-- Get into the src folder: `cd typer-cli/src/`
+- Install all the dependencies: `cd typer-cli/`
+  - If using poetry: `poetry install`
+  - If using pip: `pip -r requirements.txt`
+- Get into the src folder: `cd src/`
 - Run any of the following commands:
 
 ### add command
