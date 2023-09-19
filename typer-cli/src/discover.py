@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 """
-    Source Code to create commands and Options with Typer
-    Breaking Down CLI in Multiple Files: https://typer.tiangolo.com/tutorial/subcommands/add-typer/
-    CLI Options: https://typer.tiangolo.com/tutorial/options/
+    Discover Command: Used to discover a subnet or a specific device
 
     Usage:
         python main.py discover --help
@@ -13,7 +11,7 @@
 
 from typer import Typer, echo
 
-app = Typer(short_help="discover a subnet or discover a device")
+app = Typer(short_help="discover a subnet or a device")
 
 
 @app.command("subnet")
