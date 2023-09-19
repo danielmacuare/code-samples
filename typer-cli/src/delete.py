@@ -22,7 +22,9 @@ but you don't want to provide a default value.
 
 from typer import Option, Typer, colors, echo, secho
 
-app = Typer(short_help="delete --all or specific --device. --dry-run available ")
+app = Typer(
+    short_help="delete --all-devices or a --single-device from Netbox. --dry-run available "
+)
 
 
 @app.callback("delete", invoke_without_command=True)

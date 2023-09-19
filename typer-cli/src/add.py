@@ -40,7 +40,6 @@ def add_options(
     """Add Discovered Devices to Netbox or add a static device"""
     if discovered_devices and single_device:
         echo(f'All Discovered devices and: "{single_device}" will be added to Netbox')
-
         exit()
 
     if discovered_devices:
