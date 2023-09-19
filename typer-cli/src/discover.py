@@ -28,3 +28,7 @@ def discover_device(
 ) -> None:
     """Discover a specific device"""
     echo(f"Discovering Device: {device}")
+
+
+if __name__ == "__main__":
+    app()
