@@ -6,9 +6,9 @@
     CLI Options: https://typer.tiangolo.com/tutorial/options/
 
     Usage:
-        python discover.py discover --help
-        python discover.py discover subnet 10.1.1.0/24
-        python discover.py discover device chi-leaf-04
+        python main.py discover --help
+        python main.py discover subnet 10.1.1.0/24
+        python main.py discover device chi-leaf-04
 """
 
 from typer import Typer, echo
@@ -21,7 +21,7 @@ def discover_subnet(
     subnet: str,
 ) -> None:
     """Discover devices on a subnet"""
-    echo(f"Discovering devices on subnet: {subnet}")
+    echo(f"Discovering Devices on subnet: {subnet}")
 
 
 @app.command("device")
