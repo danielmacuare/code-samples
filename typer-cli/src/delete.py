@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-    Source Code to create commands and options with Typer
+    Delete Command: Used to delete --all-devices or a --single device from Netbox
 
     Usage:
         python main.py delete --help
@@ -9,21 +9,12 @@
         python main.py delete --single-device fra-fw-02
         python main.py delete -ad
         python main.py delete -s fra-fw-02
-
-Links:
-- Typer Commands: https://typer.tiangolo.com/tutorial/commands/
-- Breaking Down CLI in Multiple Files: https://typer.tiangolo.com/tutorial/subcommands/add-typer/
-- Callback invoke.. https://github.com/tiangolo/typer/issues/119#issuecomment-795654576
-- Why add a callback: https://github.com/tiangolo/typer/issues/402
-
-- "..." use the ellipsis in the Option when you want to have an optional to be required
-but you don't want to provide a default value.
 """
 
 from typer import Option, Typer, colors, echo, secho
 
 app = Typer(
-    short_help="delete --all-devices or a --single-device from Netbox. --dry-run available "
+    short_help="delete --all-devices or a --single-device from Netbox. --dry-run available"
 )
 
 
