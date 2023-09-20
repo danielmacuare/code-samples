@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 """
-    Source Code to create commands and arguments with Typer
-    Breaking Down CLI in Multiple Files: https://typer.tiangolo.com/tutorial/subcommands/add-typer/
-    Typer Commands: https://typer.tiangolo.com/tutorial/commands/
+    Show Command: Used to show devices and subnets available in Netbox or the Local DB
 
     Usage:
         python main.py show --help
